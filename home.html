@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Portal</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>University Portal</title>
+    <script src="https://kit.fontawesome.com/b6e03a65e6.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
     <section class="header">
         <nav>
             <a href="index.html"><img src="school/logo.png"></a>
-            <div class="nav-links">
-                <i class="fa-solid fa-xmark"></i>
+            <div class="nav-links" id="NavLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li> <a href="">Home</a></li>
                     <li> <a href="">About</a></li>
@@ -26,7 +27,7 @@
                     <li> <a href="">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa-regular fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <div class="text-box">
@@ -36,6 +37,44 @@
         </div>
 
     </section>
+
+
+    <!---Course---->
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores necessitatibus nobis.!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus impedit, nostrum aliquid id vel repudiandae similique? Quia neque doloribus id velit facere autem accusamus illum debitis non, repudiandae laborum!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus impedit, nostrum aliquid id vel repudiandae similique? Quia neque doloribus id velit facere autem accusamus illum debitis non, repudiandae laborum!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus impedit, nostrum aliquid id vel repudiandae similique? Quia neque doloribus id velit facere autem accusamus illum debitis non, repudiandae laborum!</p>
+            </div>
+        </div>
+
+
+
+    </section>
     
+    <!----- For Toggle ------->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
 </body>
 </html>
