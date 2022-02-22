@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6e03a65e6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="school/logo.png"></a>
+            <div class="nav-links" id="NavLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">About</a></li>
+                    <li> <a href="">Courses</a></li>
+                    <li> <a href="">News</a></li>
+                    <li> <a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <h1>Our Courses</h1>
+
+    </section>
+
+    <!---Course-->
+
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores necessitatibus nobis.!</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus impedit, nostrum aliquid id vel repudiandae similique? Quia neque doloribus id velit facere autem accusamus illum debitis non, repudiandae laborum!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus impedit, nostrum aliquid id vel repudiandae similique? Quia neque doloribus id velit facere autem accusamus illum debitis non, repudiandae laborum!</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga natus impedit, nostrum aliquid id vel repudiandae similique? Quia neque doloribus id velit facere autem accusamus illum debitis non, repudiandae laborum!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-----Facilities-->
+
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolores necessitatibus nobis</p>
+        
+        <div class="row">
+            <div class="facilities-col">
+                <img src="school/library.png">
+                <h3>World Class library</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis voluptates commodi in, tenetur harum, eos sapiente tempora</p>
+            </div>
+            <div class="facilities-col">
+                    <img src="school/basketball.png">
+                    <h3>Largest PlayGround</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis voluptates commodi in, tenetur harum, eos sapiente tempora</p>
+            </div>
+            <div class="facilities-col">
+                    <img src="school/cafeteria.png">
+                    <h3>Tasty and Healthy Food</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quis voluptates commodi in, tenetur harum, eos sapiente tempora</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="foota">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente necessitatibus quas eum harum quibusdam ipsum fugiat quaerat placeat, asperiores eveniet vel eius saepe beatae architecto omnis. Reiciendis maxime similique tempora.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+        <p>Made with <i class="fa-solid fa-heart"></i> by Omidigitals</p>
+
+
+    </footer>
+
+    
+    <!----- For Toggle ------->
+    <script>
+        var navLinks = document.getElementById("NavLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
